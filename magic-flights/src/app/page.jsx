@@ -102,9 +102,21 @@ export default function Home() {
             </div>
           </div>
           {/* Segundo Cards */}
-          <div className="w-full h-120 flex flex-col justify-start items-center">
-            <h1 className="text-5xl">Journey To te Skies Made Simple</h1>
-            <p>lassName="text-2xl opacity-30"Traveling is A Wonderful Way To Explore New Places. Learn About Different Cultures And Gain Unique Experiences</p>
+          <div className="w-full flex flex-col justify-start items-center gap-4">
+            <h1 className="text-6xl">Journey To te Skies Made Simple</h1>
+            <p className="text-2xl opacity-30 max-w-3xl text-center">Traveling is A Wonderful Way To Explore New Places. Learn About Different Cultures And Gain Unique Experiences</p>
+          </div>
+
+          <div className="grid grid-cols-3 gap-10 w-full">
+            <div className="bg-gray-500 hover:bg-blue-500">
+              teste1
+            </div>
+            <div className="bg-gray-500 hover:bg-blue-500">
+              teste2
+            </div>
+            <div className="bg-gray-500 hover:bg-blue-500">
+              teste3
+            </div>
           </div>
 
 
