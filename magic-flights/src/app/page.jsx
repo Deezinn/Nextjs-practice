@@ -120,8 +120,8 @@ export default function Home() {
             </div>
             <div className="grid grid-cols-2 w-full h-auto bg-red-500 justify-center items-center gap-10">
               <div className="grid grid-rows-3 bg-blue-500 w-full h-50">
-                <div className="flex flex-col w-full h-auto bg-fuchsia-500">
-                  <h1>UNÇEASH</h1>
+                <div className="flex flex-col w-full h-auto bg-fuchsia-500 text-6xl text-center">
+                  <h1>UNSLEASH</h1>
                 </div>
                 <div className="flex flex-col w-full h-auto bg-green-500 text-6xl text-end">
                   <h1>WANDERLUST</h1>
@@ -131,8 +131,8 @@ export default function Home() {
                 </div>
               </div>
               <div className="grid grid-rows-3 bg-blue-500 w-full h-50">
-                <div className="flex flex-col w-full h-auto bg-fuchsia-500">
-
+                <div className="flex flex-col w-full h-auto bg-fuchsia-500 px-2">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad ea molestiae asperiores ex veritatis quisquam nihil sed ipsam animi, iusto ut inventore quo amet voluptates deserunt enim quaerat? Iusto, a!]</p>
                 </div>
                 <div className="flex flex-col w-full h-auto bg-green-500 text-start text-6xl">
                   <h1>WITH</h1>
