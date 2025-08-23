@@ -118,16 +118,29 @@ export default function Home() {
                 className="object-cover rounded-3xl"
               />
             </div>
-            <div className="flex flex-row w-full h-auto bg-red-50 justify-center items-center">
-              <div className="flex-row bg-blue-500 w-full h-full justify-center items-center">
-                <h1>teste</h1>
-                <h1>teste1</h1>
-              </div>
-              <div className="flex-col bg-green-500 w-full h-full justify-center items-centerjustify-center items-center">
-                <h1>teste</h1>
-                <h1>teste</h1>
-              </div>
+            <div className="grid grid-cols-2 w-full h-auto bg-red-500 justify-center items-center gap-10">
+              <div className="grid grid-rows-3 bg-blue-500 w-full h-50">
+                <div className="flex flex-col w-full h-auto bg-fuchsia-500">
+                  <h1>UNÇEASH</h1>
+                </div>
+                <div className="flex flex-col w-full h-auto bg-green-500 text-6xl text-end">
+                  <h1>WANDERLUST</h1>
+                </div>
+                <div className="flex flex-col w-full h-auto bg-yellow-500">
 
+                </div>
+              </div>
+              <div className="grid grid-rows-3 bg-blue-500 w-full h-50">
+                <div className="flex flex-col w-full h-auto bg-fuchsia-500">
+
+                </div>
+                <div className="flex flex-col w-full h-auto bg-green-500 text-start text-6xl">
+                  <h1>WITH</h1>
+                </div>
+                <div className="flex flex-col w-full h-auto bg-yellow-500">
+
+                </div>
+              </div>
             </div>
           </div>
         </div>
