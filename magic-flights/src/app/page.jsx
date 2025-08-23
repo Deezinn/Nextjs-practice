@@ -121,7 +121,7 @@ export default function Home() {
 
 
           {/* Terceiro Cards */}
-          <div className="grid grid-cols-[1fr_2fr]  w-full h-100">
+          <div className="grid grid-cols-[1fr_2fr]  w-full h-120">
             <div className="relative ">
               <Image
                 src={cardMarketing}
@@ -130,7 +130,7 @@ export default function Home() {
                 className="object-cover rounded-3xl"
               />
             </div>
-            <div className="grid grid-cols-2 w-full h-100 justify-center items-center">
+            <div className="grid grid-cols-2 w-full h-auto justify-center items-center">
               <div className="grid grid-rows-3  w-full h-50">
                 <div className="flex flex-col w-full h-auto  text-6xl text-center">
                   <h1>UNSLEASH</h1>
@@ -156,7 +156,7 @@ export default function Home() {
             </div>
           </div>
            <div className="flex flex-row w-full h-20 mb-[10px]">
-                <div className="flex flex-row gap-10 bg-gray-200 h-full w-1/3  rounded-2xl  justify-center items-center text-center">
+                <div className="flex flex-row gap-10 bg-gray-200 h-full w-1/2  rounded-2xl  justify-center items-center text-center">
                     <h1 className="text-2xl text-blue-400">20% OFF</h1>
                     <h1 className="text-gray-500"> Promo only 23 ago 2025</h1>
                 </div>
