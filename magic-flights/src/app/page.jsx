@@ -1,18 +1,17 @@
-import airPlane from "@/assets/background/AirPlane.png";
-import cloudBackground from "@/assets/background/Cloud-Background.jpg";
+import cloudBackground from "@/assets/background/background_airplane.png";
+import cardMarketing from '@/assets/cardsMarketing/background.jpg';
 import { CarrosselLogos } from "@/constants/index";
 import Image from "next/image";
 import { BsArrowLeftCircleFill, BsArrowRightCircleFill } from "react-icons/bs";
 import { FaGithub, FaTwitter } from "react-icons/fa";
 import { SiFacebook } from "react-icons/si";
 
-
 export default function Home() {
   return (
-    <main className="w-full h-screen relative gap-5">
+    <main className="w-full h-auto relative gap-5">
       {/* Background de nuvem */}
-      <div className="px-10">
-        <div className="relative w-full h-150 rounded-4xl overflow-hidden z-0">
+      <div className="flex flex-row justify-center w-full items-center gap-24">
+        <div className="relative w-1/3 h-130 z-0 ">
           <Image
             src={cloudBackground}
             alt="Cloud background"
@@ -20,16 +19,11 @@ export default function Home() {
             className="object-cover"
           />
         </div>
-      </div>
-
-      {/* Avião acima da nuvem */}
-      <div className="w-full absolute top-[-220px] right-0 left-[1120px] h-full z-1  max-w-4xl">
-        <Image
-          src={airPlane}
-          alt="Airplane"
-          fill
-          className="object-cover object-left max-w-4xl"
-        />
+        <div className="flex flex-col gap-10 text-center justify-center w-[700px] h-auto ">
+          <h1 className="text-4xl text-blue-600">Experiencia do avião mágico</h1>
+          <p className="text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit id sunt quasi voluptates repellat deleniti excepturi aperiam dolores maiores? Vel rerum explicabo ipsam similique iusto voluptatum, voluptates itaque praesentium exercitationem!</p>
+          <button className="w-1/4 h-10 rounded-full bg-yellow-300 cursor-pointer hover:bg-yellow-400">Leia mais</button>
+        </div>
       </div>
       <div className="flex flex-col gap-30">
         <div className=" grid grid-cols-[1fr_2fr] justify-center items-center px-32 mt-10 ">
@@ -39,6 +33,7 @@ export default function Home() {
             <div className="flex w-7 h-7 rounded-full justify-center items-center"><SiFacebook className="text-blue-500 text-xl cursor-pointer" /></div>
             <div className="flex w-7 h-7 rounded-full justify-center items-center"><FaGithub className="text-black text-xl cursor-pointer" /></div>
           </div>
+
           <div className="flex flex-row justify-between">
             {CarrosselLogos.map((logos, index) => (
               <h1 key={index}>{logos.imagem}</h1>
@@ -105,7 +100,35 @@ export default function Home() {
                 </div>
               </div>
             </div>
+          </div>
+          {/* Segundo Cards */}
+          <div className="w-full h-120 flex flex-col justify-start items-center">
+            <h1 className="text-5xl">Journey To te Skies Made Simple</h1>
+            <p>lassName="text-2xl opacity-30"Traveling is A Wonderful Way To Explore New Places. Learn About Different Cultures And Gain Unique Experiences</p>
+          </div>
 
+
+          {/* Terceiro Cards */}
+          <div className="grid grid-cols-[1fr_2fr]  w-full h-100 mb-[100px]">
+            <div className="relative ">
+              <Image
+                src={cardMarketing}
+                alt="Cloud background"
+                fill
+                className="object-cover rounded-3xl"
+              />
+            </div>
+            <div className="flex flex-row w-full h-auto bg-red-50 justify-center items-center">
+              <div className="flex-row bg-blue-500 w-full h-full justify-center items-center">
+                <h1>teste</h1>
+                <h1>teste1</h1>
+              </div>
+              <div className="flex-col bg-green-500 w-full h-full justify-center items-centerjustify-center items-center">
+                <h1>teste</h1>
+                <h1>teste</h1>
+              </div>
+
+            </div>
           </div>
         </div>
       </div>
