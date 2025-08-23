@@ -121,7 +121,7 @@ export default function Home() {
 
 
           {/* Terceiro Cards */}
-          <div className="grid grid-cols-[1fr_2fr]  w-full h-100 mb-[100px]">
+          <div className="grid grid-cols-[1fr_2fr]  w-full h-100">
             <div className="relative ">
               <Image
                 src={cardMarketing}
@@ -130,31 +130,40 @@ export default function Home() {
                 className="object-cover rounded-3xl"
               />
             </div>
-            <div className="grid grid-cols-2 w-full h-auto bg-red-500 justify-center items-center gap-10">
-              <div className="grid grid-rows-3 bg-blue-500 w-full h-50">
-                <div className="flex flex-col w-full h-auto bg-fuchsia-500 text-6xl text-center">
+            <div className="grid grid-cols-2 w-full h-100 justify-center items-center">
+              <div className="grid grid-rows-3  w-full h-50">
+                <div className="flex flex-col w-full h-auto  text-6xl text-center">
                   <h1>UNSLEASH</h1>
                 </div>
-                <div className="flex flex-col w-full h-auto bg-green-500 text-6xl text-end">
-                  <h1>WANDERLUST</h1>
+                <div className="flex flex-col w-full h-auto  text-6xl text-end">
+                  <h1>WANDER</h1>
                 </div>
-                <div className="flex flex-col w-full h-auto bg-yellow-500">
-
+                <div className="flex flex-col w-full h-auto  text-end justify-center items-center px-5">
+                    <h1>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere, tempora molestias adipisci voluptatem laudantium odio?</h1>
                 </div>
               </div>
-              <div className="grid grid-rows-3 bg-blue-500 w-full h-50">
-                <div className="flex flex-col w-full h-auto bg-fuchsia-500 px-2">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad ea molestiae asperiores ex veritatis quisquam nihil sed ipsam animi, iusto ut inventore quo amet voluptates deserunt enim quaerat? Iusto, a!]</p>
+              <div className="grid grid-rows-3  w-full h-50">
+                <div className="flex flex-col w-full h-auto px-5">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad ea molestiae asperiores ex veritatis quisquam nihil sed ipsam animi, !</p>
                 </div>
-                <div className="flex flex-col w-full h-auto bg-green-500 text-start text-6xl">
-                  <h1>WITH</h1>
+                <div className="flex flex-col w-full h-auto text-start text-6xl">
+                  <h1>LUST WITH</h1>
                 </div>
-                <div className="flex flex-col w-full h-auto bg-yellow-500">
-
+                <div className="flex flex-col w-full h-auto  text-6xl text-start">
+                    <h1>SKYWINGS</h1>
                 </div>
               </div>
             </div>
           </div>
+           <div className="flex flex-row w-full h-20 mb-[10px]">
+                <div className="flex flex-row gap-10 bg-gray-200 h-full w-1/3  rounded-2xl  justify-center items-center text-center">
+                    <h1 className="text-2xl text-blue-400">20% OFF</h1>
+                    <h1 className="text-gray-500"> Promo only 23 ago 2025</h1>
+                </div>
+                <div className="flex w-full  justify-center rounded-2xl items-center text-center bg-blue-400 cursor-pointer">
+                    <h1>Book A Flight Now →</h1>
+                </div>
+           </div>
         </div>
       </div>
     </main>
