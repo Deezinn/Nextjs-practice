@@ -41,7 +41,7 @@ export default function Home() {
         </div>
       </div>
       <div className="flex flex-col gap-30">
-        <div className=" grid grid-cols-[1fr_2fr] justify-center items-center px-32 mt-10 ">
+        <div className=" grid grid-cols-[1fr_2fr] justify-center items-center pxnp-32 mt-10 ">
           <div className="w-1/2 flex h-12 border-1 border-black/10 rounded-2xl justify-center items-center flex-row gap-5 shadow-md">
             <div className="text-black/50 hover:mt-2">
               <h1>Follow</h1>

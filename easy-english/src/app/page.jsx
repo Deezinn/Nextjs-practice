@@ -36,8 +36,8 @@ export default function Home() {
                 <div className="w-full h-auto flex justify-center mr-10">
                   <Icon
                     icon="svg-spinners:3-dots-move"
-                    width="60"
-                    height="60"
+                    width="70"
+                    height="70"
                     className="text-white"
                   />
                 </div>
@@ -73,3 +73,5 @@ export default function Home() {
     </div>
   );
 }
+
+
