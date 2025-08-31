@@ -8,8 +8,42 @@ export default function Home() {
     <div className="w-full h-auto p-2">
       <div className="w-full h-auto grid grid-cols-[4fr_2fr]">
         {/* Grade da esquerda */}
-        <div className="w-full h-auto bg-gray-200">
-          <h1>teste</h1>
+        <div className="w-full h-auto grid grid-rows-[2fr_1fr] bg-gray-100 rounded">
+          <div className="w-full h-auto p-5">
+            <div className="w-full h-20 flex justify-between">
+              <div className="flex flex-row gap-2 justify-center items-center">
+                <Icon
+                  icon="uil:brain"
+                  width="60"
+                  height="60"
+                  className="text-black"
+                />
+                <h1 className="flex flex-row text-3xl">
+                  Moz<h1 className="text-pink-400">ok</h1>
+                </h1>
+              </div>
+              <div className="flex flex-row gap-9 justify-center items-center">
+                <Icon
+                  icon="line-md:bell-loop"
+                  width="30"
+                  height="30"
+                  className="text-gray-500"
+                />
+                <Icon
+                  icon="bytesize:options"
+                  width="30"
+                  height="30"
+                  className="text-gray-500"
+                />
+              </div>
+            </div>
+
+
+
+
+
+          </div>
+          <div className="w-full h-auto p-5"></div>
         </div>
 
         {/* Grade da direita */}
