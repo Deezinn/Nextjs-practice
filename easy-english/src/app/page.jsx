@@ -6,9 +6,9 @@ import background_person from "@/assets/images/background_icon/person.png";
 export default function Home() {
   return (
     <div className="w-full h-auto p-2">
-      <div className="w-full h-auto grid grid-cols-[4fr_2fr]">
+      <div className="w-full h-auto grid sm:grid-row-[4fr_2fr] md:grid-cols-[4fr_2fr]">
         {/* Grade da esquerda */}
-        <div className="w-full h-auto grid grid-rows-[1fr_2fr] rounded gap-10">
+        <div className="w-full h-170 grid grid-rows-[1fr_2fr] rounded gap-10">
           <div className="w-full h-auto p-5">
             <div className="w-full h-20 flex justify-between">
               <div className="flex flex-row gap-2 justify-center items-center">
@@ -19,7 +19,7 @@ export default function Home() {
                   className="text-black"
                 />
                 <h1 className="flex flex-row text-3xl">
-                  Moz<h1 className="text-pink-400">ok</h1>
+                  Moz <span className="text-pink-400">ok</span>
                 </h1>
               </div>
               <div className="flex flex-row gap-9 justify-center items-center">
@@ -46,20 +46,20 @@ export default function Home() {
                   className="object-cover  "
                 />
               </div>
-              <div className="w-full h-auto grid grid-rows-[3fr_1fr]">
+              <div className="w-full h-auto grid md:grid-rows-[3fr_1fr]">
                 <div className="w-full h-full flex flex-col text-6xl px-10 justify-center items-start">
                   <h1 className="">Hi André</h1>
                   <h1 className="font-bold">What do you wanna learn?</h1>
                 </div>
                 <div className="flex">
-                  <div className="w-full h-20 flex bg-gray-300 rounded-full px-5 justify-between items-center shadow-2xl">
+                  <div className="w-full h-20 flex rounded-full px-5 justify-between items-center shadow-2xl">
                     <input
                       type="text"
-                      class="flex w-full h-18 text-2xl px-5 focus:outline-none focus:ring-0"
+                      className="flex w-full h-18 text-2xl px-5 focus:outline-none focus:ring-0"
                       placeholder="Search here"
                     />
 
-                    <div className="w-30 h-18 bg-red-500 rounded-full flex justify-center items-center hover:bg-red-600 cursor-pointer">
+                    <div className="w-30 h-15 bg-red-500 rounded-full flex justify-center items-center hover:bg-red-600 cursor-pointer">
                       <Icon
                         icon="line-md:search"
                         width="50"
@@ -87,7 +87,10 @@ export default function Home() {
             </div>
             <div className="w-full h-auto grid grid-cols-[2fr_2fr] px-10">
               <h1>teste</h1>
-              <h1>teste</h1>
+              <div className="w-full h-auto grid grid-row-[2fr_2fr]">
+                <h1>tets</h1>
+                <h1>teste</h1>
+              </div>
             </div>
           </div>
         </div>
