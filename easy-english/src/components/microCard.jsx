@@ -14,7 +14,7 @@ export default function MicroCard() {
       </div>
 
       {/* Item 1 */}
-      <div className="grid grid-cols-[2fr_1fr] w-full h-20 shadow-2xl rounded-2xl delay-150">
+      <div className="grid grid-cols-[2fr_1fr] w-full h-20 hover:shadow-2xl transition delay-150 duration-500 rounded-2xl delay-150">
         <div className="flex flex-row gap-5 justify-baseline items-center text-start p-5">
           <div className="flex justify-center items-center bg-gray-200 w-10 h-10 rounded-xl">
             <h1>E</h1>
@@ -42,7 +42,7 @@ export default function MicroCard() {
       </div>
 
       {/* Item 2 */}
-      <div className="grid grid-cols-[2fr_1fr] w-full h-20 hover:shadow-2xl rounded-2xl">
+      <div className="grid grid-cols-[2fr_1fr] w-full h-20 hover:shadow-2xl transition delay-150 duration-500 rounded-2xl">
         <div className="flex flex-row gap-5 justify-baseline items-center text-start p-5">
           <div className="flex justify-center items-center bg-black w-10 h-10 rounded-xl">
             <h1 className="text-white">JS</h1>
@@ -67,7 +67,7 @@ export default function MicroCard() {
       </div>
 
       {/* Item 3 */}
-      <div className="grid grid-cols-[2fr_1fr] w-full h-20 hover:shadow-2xl rounded-2xl">
+      <div className="grid grid-cols-[2fr_1fr] w-full h-20 hover:shadow-2xl transition delay-150 duration-500 rounded-2xl">
         <div className="flex flex-row gap-5 justify-baseline items-center text-start p-5">
           <div className="flex justify-center items-center bg-gray-200 w-10 h-10 rounded-xl">
             <h1 className="">S</h1>
@@ -92,7 +92,7 @@ export default function MicroCard() {
       </div>
 
       {/* Item 4 */}
-      <div className="grid grid-cols-[2fr_1fr] w-full h-20 hover:shadow-2xl rounded-2xl">
+      <div className="grid grid-cols-[2fr_1fr] w-full h-20 hover:shadow-2xl transition delay-150 duration-500 rounded-2xl">
         <div className="flex flex-row gap-5 justify-baseline items-center text-start p-5">
           <div className="flex justify-center items-center bg-gray-200 w-10 h-10 rounded-xl">
             <h1>D</h1>
