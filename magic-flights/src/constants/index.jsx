@@ -2,8 +2,8 @@
 
 
 export const CarrosselLogos = [
-     {imagem: "empresa1"},
-     {imagem: "empresa2"},
+     {imagem: "andre"},
+     {imagem: "rafael"},
      {imagem: "empresa3"},
      {imagem: "empresa4"},
 ]

@@ -6,10 +6,10 @@ import background_person from "@/assets/images/background_icon/person.png";
 
 export default function Home() {
   return (
-    <div className="w-full h-[1100px] p-2 lato-light">
-      <div className="w-full h-[1070px] grid sm:grid-rows-[4fr_2fr] md:grid-cols-[4fr_2fr] gap-5" >
+    <div className="w-full h-auto p-2 lato-light">
+      <div className="w-full h-auto grid sm:grid-rows-[4fr_2fr] md:grid-cols-[4fr_2fr] gap-5" >
         {/* Grade da esquerda */}
-        <div className="w-full h-[1070px] grid grid-rows-[1fr_2fr] rounded gap-10">
+        <div className="w-full h-auto grid grid-rows-[1fr_2fr] rounded gap-10">
           <div className="w-full h-auto p-5">
             {/* Topo */}
             <div className="w-full h-20 flex justify-between items-center">
@@ -26,12 +26,12 @@ export default function Home() {
             </div>
 
             {/* Conteúdo */}
-            <div className="w-full h-full grid grid-cols-[1.3fr_2fr] gap-5">
-              <div className="w-full h-[400px] relative">
+            <div className="w-full h-full grid grid-rows-[1.3fr_0.1fr] md:grid-cols-[1.3fr_2fr] gap-5">
+              <div className="w-full hidden md:block h-[500px] relative">
                 <Image src={background_person} alt="Foto de perfil" fill className="object-cover" />
               </div>
               <div className="w-full h-auto grid md:grid-rows-[3fr_1fr] gap-5">
-                <div className="w-full h-full flex flex-col text-6xl px-10 justify-center items-start">
+                <div className="w-full h-full flex flex-col text-6xl px-10 justify-center items-start ">
                   <h1>Hi André</h1>
                   <h1 className="font-bold">What do you wanna learn?</h1>
                 </div>
@@ -52,8 +52,8 @@ export default function Home() {
           </div>
 
           {/* Filtros e cards */}
-          <div className="w-full h-[75px] flex flex-col p-5">
-            <div className="w-full h-20 flex justify-start items-center gap-12 text-2xl px-10">
+          <div className="w-full h-auto flex flex-col p-5 ">
+            <div className="w-full h-auto flex justify-start items-center gap-12 text-2xl px-10">
               <div className="flex flex-col justify-between items-center cursor-pointer">
                 <h1>All</h1>
                 <div className="w-10 h-1 bg-amber-400 rounded-full"></div>
