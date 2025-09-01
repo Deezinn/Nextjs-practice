@@ -6,10 +6,10 @@ import background_person from "@/assets/images/background_icon/person.png";
 
 export default function Home() {
   return (
-    <div className="w-full h-auto p-2 lato-light">
-      <div className="w-full h-auto grid sm:grid-rows-[4fr_2fr] md:grid-cols-[4fr_2fr] gap-5">
+    <div className="w-full h-[1100px] p-2 lato-light">
+      <div className="w-full h-[1070px] grid sm:grid-rows-[4fr_2fr] md:grid-cols-[4fr_2fr] gap-5" >
         {/* Grade da esquerda */}
-        <div className="w-full h-auto grid grid-rows-[1fr_2fr] rounded gap-10">
+        <div className="w-full h-[1070px] grid grid-rows-[1fr_2fr] rounded gap-10">
           <div className="w-full h-auto p-5">
             {/* Topo */}
             <div className="w-full h-20 flex justify-between items-center">
