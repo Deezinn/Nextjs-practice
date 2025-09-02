@@ -106,10 +106,10 @@ export default function Home() {
               </div>
               <div className="w-full h-auto grid grid-rows-2 gap-2 ">
                 <div className="w-full h-auto shadow-2xl rounded-2xl p-10">
-                  Fran é Linda
+                  teste
                 </div>
                 <div className="w-full h-auto shadow-2xl rounded-2xl p-10">
-                  g1
+                  teste
                 </div>
               </div>
             </div>
