@@ -75,7 +75,7 @@ export default function Home() {
                 <Icon icon="mingcute:cube-3d-line" width="30" height="30" className="text-gray-500" />
               </div>
             </div>
-            <div className="w-full h-auto grid grid-cols-2 p-5 gap-5">
+            <div className="w-full h-auto grid grid-cols-1 md:grid-cols-2 p-5 gap-5">
               <div className="w-full h-auto rounded-2xl p-10 shadow-2xl flex flex-col gap-7">
                 <div className="flex flex-col gap-1">
                   <h1 className="text-5xl font-bold">Easy English</h1>
@@ -83,7 +83,7 @@ export default function Home() {
                 </div>
                 <div className="flex flex-row justify-between items-center">
                   <div className="flex flex-row gap-5">
-                    <div className="mask-circle w-20 h-20 bg-gradient-to-r from-pink-500 to-yellow-500 rounded-full"></div>
+                    <div className="mask-circle w-20 h-20 bg-gradient-to-l from-pink-500 to-yellow-500 rounded-full"></div>
                     <div>
                       <h1 className="text-3xl text-cyan-500">4,5</h1>
                       <div className="flex flex-row gap-1 justify-start items-center text-center">
@@ -96,17 +96,21 @@ export default function Home() {
                 </div>
                 <div className="w-full h-auto flex flex-row justify-between items-center text-center">
                   <div className="flex flex-row justify-center items-center gap-5 ">
-                      <h1 className="flex justify-center items-center text-center w-25 h-2 p-6 bg-cyan-200 rounded">$32,00</h1>
-                      <h1>1 hour</h1>
+                    <h1 className="flex justify-center items-center text-center w-25 h-2 p-6 bg-cyan-200 rounded">$32,00</h1>
+                    <h1>1 hour</h1>
                   </div>
                   <div className="flex flex-row justify-center items-center gap-5 ">
-                    <Icon icon="line-md:arrow-right" width="30" height="30" className="text-orange-200 " />
+                    <Icon icon="line-md:arrow-right" width="30" height="30" className="text-orange-200 cursor-pointer" />
                   </div>
                 </div>
               </div>
               <div className="w-full h-auto grid grid-rows-2 gap-2 ">
-                <h1>tets</h1>
-                <h1>teste</h1>
+                <div className="w-full h-auto shadow-2xl rounded-2xl p-10">
+                  Fran é Linda
+                </div>
+                <div className="w-full h-auto shadow-2xl rounded-2xl p-10">
+                  g1
+                </div>
               </div>
             </div>
           </div>
