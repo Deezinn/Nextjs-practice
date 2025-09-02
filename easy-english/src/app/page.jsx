@@ -3,16 +3,17 @@ import personIcon from "@/assets/images/person_icon/person.jpeg";
 import { Icon } from "@iconify/react";
 import MicroCard from "@/components/microCard";
 import background_person from "@/assets/images/background_icon/person.png";
+import mobile_marketing from "@/assets/images/card_image/Mobile Marketing-pana.png"
 
 export default function Home() {
   return (
-    <div className="w-full h-auto p-2 lato-light">
-      <div className="w-full h-auto grid sm:grid-rows-[4fr_2fr] md:grid-cols-[4fr_2fr] gap-5" >
+    <div className="w-full h-auto p-2 ">
+      <div className="w-full h-screen grid sm:grid-rows-[4fr_2fr] md:grid-cols-[4fr_2fr] gap-5" >
         {/* Grade da esquerda */}
-        <div className="w-full h-auto grid grid-rows-[1fr_2fr] rounded gap-10">
+        <div className="w-full h-auto grid grid-rows-[0.1fr_0.1fr] rounded gap-10">
           <div className="w-full h-auto p-5">
             {/* Topo */}
-            <div className="w-full h-20 flex justify-between items-center">
+            <div className="w-full h-auto flex justify-between items-center ">
               <div className="flex flex-row gap-2 items-center">
                 <Icon icon="uil:brain" width="60" height="60" className="text-black" />
                 <h1 className="flex flex-row text-3xl">
@@ -26,8 +27,8 @@ export default function Home() {
             </div>
 
             {/* Conteúdo */}
-            <div className="w-full h-full grid grid-rows-[1.3fr_0.1fr] md:grid-cols-[1.3fr_2fr] gap-5">
-              <div className="w-full hidden md:block h-[500px] relative">
+            <div className="w-full h-full grid grid-rows-[1.3fr_0.1fr] md:grid-cols-[1.3fr_2fr] gap-5" >
+              <div className="w-full hidden md:block h-auto relative">
                 <Image src={background_person} alt="Foto de perfil" fill className="object-cover" />
               </div>
               <div className="w-full h-auto grid md:grid-rows-[3fr_1fr] gap-5">
@@ -53,21 +54,57 @@ export default function Home() {
 
           {/* Filtros e cards */}
           <div className="w-full h-auto flex flex-col p-5 ">
-            <div className="w-full h-auto flex justify-start items-center gap-12 text-2xl px-10">
-              <div className="flex flex-col justify-between items-center cursor-pointer">
-                <h1>All</h1>
-                <div className="w-10 h-1 bg-amber-400 rounded-full"></div>
+            <div className="w-full h-auto flex justify-between items-center gap-12 text-2xl px-10">
+              <div className="flex flex-row gap-5">
+                <div className="flex flex-col justify-between items-center cursor-pointer">
+                  <h1>All</h1>
+                  <div className="w-10 h-1 bg-amber-400 rounded-full"></div>
+                </div>
+                <div className="cursor-pointer">
+                  <h1>New</h1>
+                </div>
+                <div className="cursor-pointer">
+                  <h1>Popular</h1>
+                </div>
+                <div>
+
+                </div>
               </div>
-              <div className="cursor-pointer">
-                <h1>New</h1>
-              </div>
-              <div className="cursor-pointer">
-                <h1>Popular</h1>
+              <div className="flex flex-row gap-5">
+                <Icon icon="line-md:list-3-filled" width="30" height="30" className="text-gray-500" />
+                <Icon icon="mingcute:cube-3d-line" width="30" height="30" className="text-gray-500" />
               </div>
             </div>
-            <div className="w-full h-auto grid grid-cols-2 px-10 gap-5">
-              <h1>teste</h1>
-              <div className="w-full h-auto grid grid-rows-2 gap-2">
+            <div className="w-full h-auto grid grid-cols-2 p-5 gap-5">
+              <div className="w-full h-auto rounded-2xl p-10 shadow-2xl flex flex-col gap-7">
+                <div className="flex flex-col gap-1">
+                  <h1 className="text-5xl font-bold">Easy English</h1>
+                  <p className="text-2xl">Language cources</p>
+                </div>
+                <div className="flex flex-row justify-between items-center">
+                  <div className="flex flex-row gap-5">
+                    <div className="mask-circle w-20 h-20 bg-gradient-to-r from-pink-500 to-yellow-500 rounded-full"></div>
+                    <div>
+                      <h1 className="text-3xl text-cyan-500">4,5</h1>
+                      <div className="flex flex-row gap-1 justify-start items-center text-center">
+                        <Icon icon="line-md:heart-filled" width="20" height="20" className="text-gray-500" />
+                        <h1 className="text-gray-500" >345k</h1>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="relative w-50 h-50"> <Image src={mobile_marketing} alt="Foto de perfil" fill className="object-cover" /></div>
+                </div>
+                <div className="w-full h-auto flex flex-row justify-between items-center text-center">
+                  <div className="flex flex-row justify-center items-center gap-5 ">
+                      <h1 className="flex justify-center items-center text-center w-25 h-2 p-6 bg-cyan-200 rounded">$32,00</h1>
+                      <h1>1 hour</h1>
+                  </div>
+                  <div className="flex flex-row justify-center items-center gap-5 ">
+                    <Icon icon="line-md:arrow-right" width="30" height="30" className="text-orange-200 " />
+                  </div>
+                </div>
+              </div>
+              <div className="w-full h-auto grid grid-rows-2 gap-2 ">
                 <h1>tets</h1>
                 <h1>teste</h1>
               </div>
