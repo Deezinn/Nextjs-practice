@@ -4,10 +4,11 @@ import { Icon } from "@iconify/react";
 import MicroCard from "@/components/microCard";
 import background_person from "@/assets/images/background_icon/person.png";
 import mobile_marketing from "@/assets/images/card_image/Mobile Marketing-pana.png"
+import { ValuesMockCalendar } from "@/constants/main";
 
 export default function Home() {
   return (
-    <div className="w-full h-auto p-2 ">
+    <div className="w-full h-auto">
       <div className="w-full h-screen grid sm:grid-rows-[4fr_2fr] md:grid-cols-[4fr_2fr] gap-5" >
         {/* Grade da esquerda */}
         <div className="w-full h-auto grid grid-rows-[0.1fr_0.1fr] rounded gap-10">
@@ -27,7 +28,7 @@ export default function Home() {
             </div>
 
             {/* Conteúdo */}
-            <div className="w-full h-full grid grid-rows-[1.3fr_0.1fr] md:grid-cols-[1.3fr_2fr] gap-5" >
+            <div className="w-full h-full grid grid-rows-[4fr_0.1fr] md:grid-cols-[1.3fr_2fr] gap-5" >
               <div className="w-full hidden md:block h-auto relative">
                 <Image src={background_person} alt="Foto de perfil" fill className="object-cover" />
               </div>
@@ -54,7 +55,7 @@ export default function Home() {
 
           {/* Filtros e cards */}
           <div className="w-full h-auto flex flex-col p-5 ">
-            <div className="w-full h-auto flex justify-between items-center gap-12 text-2xl px-10">
+            <div className="w-full h-auto flex justify-between items-center gap-6 text-2xl px-10">
               <div className="flex flex-row gap-5">
                 <div className="flex flex-col justify-between items-center cursor-pointer">
                   <h1>All</h1>
@@ -75,11 +76,11 @@ export default function Home() {
                 <Icon icon="mingcute:cube-3d-line" width="30" height="30" className="text-gray-500" />
               </div>
             </div>
-            <div className="w-full h-auto grid grid-cols-1 md:grid-cols-2 p-5 gap-5">
+            <div className="w-full h-auto grid grid-cols-1 md:grid-cols-[2fr_2fr] p-5 gap-5">
               <div className="w-full h-auto rounded-2xl p-10 shadow-2xl flex flex-col gap-7">
                 <div className="flex flex-col gap-1">
                   <h1 className="text-5xl font-bold">Easy English</h1>
-                  <p className="text-2xl">Language cources</p>
+                  <p className="text-xl text-gray-500">Language cources</p>
                 </div>
                 <div className="flex flex-row justify-between items-center">
                   <div className="flex flex-row gap-5">
@@ -97,19 +98,40 @@ export default function Home() {
                 <div className="w-full h-auto flex flex-row justify-between items-center text-center">
                   <div className="flex flex-row justify-center items-center gap-5 ">
                     <h1 className="flex justify-center items-center text-center w-25 h-2 p-6 bg-cyan-200 rounded">$32,00</h1>
-                    <h1>1 hour</h1>
                   </div>
                   <div className="flex flex-row justify-center items-center gap-5 ">
                     <Icon icon="line-md:arrow-right" width="30" height="30" className="text-orange-200 cursor-pointer" />
                   </div>
                 </div>
               </div>
-              <div className="w-full h-auto grid grid-rows-2 gap-2 ">
-                <div className="w-full h-auto shadow-2xl rounded-2xl p-10">
-                  teste
+              <div className="w-full h-auto grid grid-rows-2 md:grid-rows-2 gap-2">
+                <div className="w-full h-auto shadow-2xl rounded-2xl p-10 flex flex-col justify-between gap-5">
+                  <div className="flex flex-col w-full h-auto">
+                    <h1 className="text-2xl md:text-5xl font-bold">Illustrator "Professinal"</h1>
+                    <h1 className="text-xl text-gray-500">More skills</h1>
+                  </div>
+                  <div className="relative flex flex-row justify-between w-full h-auto items-center">
+
+                    <h1 className="flex justify-center items-center text-center w-25 h-2 p-6 bg-cyan-200 rounded">
+                      $32,00
+                    </h1>
+                    <Icon icon="line-md:arrow-right" width="30" height="30" className="text-orange-200 cursor-pointer" />
+                  </div>
+
                 </div>
-                <div className="w-full h-auto shadow-2xl rounded-2xl p-10">
-                  teste
+                <div className="w-full h-auto shadow-2xl rounded-2xl p-10 flex flex-col justify-between gap-5">
+                  <div className="flex flex-col">
+                    <h1 className="text-2xl md:text-5xl font-bold">Cybersecurity</h1>
+                    <h1 className="text-xl text-gray-500">Best hacker</h1>
+                  </div>
+                  <div className="relative flex flex-row justify-between w-full h-auto items-center">
+
+                    <h1 className="flex justify-center items-center text-center w-25 h-2 p-6 bg-red-200 rounded">
+                      $100,00
+                    </h1>
+                    <Icon icon="line-md:arrow-right" width="30" height="30" className="text-orange-200 cursor-pointer" />
+                  </div>
+
                 </div>
               </div>
             </div>
@@ -160,7 +182,20 @@ export default function Home() {
             </div>
 
             {/* Terceiro card */}
-            <div className="w-full h-72 bg-blue-500 rounded-2xl"></div>
+            <div className="w-full h-full rounded-2xl p-10 flex flex-row justify-center items-end  gap-2">
+              {ValuesMockCalendar.map((value, key) => (
+                <div key={key} className="relative flex flex-row w-full h-60 justify-center items-center text-center rounded-2xl">
+                  <div className="shadow-xl flex flex-col w-full h-50 rounded-2xl justify-center items-center text-center gap-12">
+                    {key === 1 || key === 3 ? <div className="absolute top-15 w-5 h-5 bg-red-400 rounded-full "> </div> : null}
+                    <div>
+                      <h1 className="text-2xl">{value.dia}</h1>
+                      <h1 className="text-sm">{value.mes}</h1>
+                    </div>
+                  </div>
+                </div>
+              ))
+              }
+            </div>
           </div>
         </div>
       </div>
