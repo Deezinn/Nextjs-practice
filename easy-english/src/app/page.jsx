@@ -82,34 +82,8 @@ export default function Home() {
                   <h1 className="text-5xl font-bold">Easy English</h1>
                   <p className="text-xl text-gray-500">Language cources</p>
                 </div>
-                <div className="flex flex-row justify-between items-center ">
-                  <div className="flex flex-row justify-center items-center gap-3">
-                    {/* container da imagem */}
-                    <div className="relative w-30 h-30">
-                      <Image
-                        src={personIcon}
-                        alt="Foto de perfil"
-                        fill
-                        className="object-cover rounded-full p-2"
-                      />
-                    </div>
-
-                    {/* texto ao lado */}
-                    <div>
-                      <h1 className="text-3xl text-cyan-500">4,5</h1>
-                      <div className="flex flex-row gap-1 justify-start items-center text-center">
-                        <Icon
-                          icon="line-md:heart-filled"
-                          width="20"
-                          height="20"
-                          className="text-gray-500"
-                        />
-                        <h1 className="text-gray-500">25k</h1>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div className="relative w-50 h-50"> <Image src={mobile_marketing} alt="Foto de perfil" fill className="object-cover" /></div>
+                <div className="flex flex-row justify-center items-center ">
+                  <div className="relative w-50 h-50 hidden md:block"> <Image src={mobile_marketing} alt="Foto de perfil" fill className="object-cover" /></div>
                 </div>
                 <div className="w-full h-auto flex flex-row justify-between items-center text-center">
                   <div className="flex flex-row justify-center items-center gap-5 ">
