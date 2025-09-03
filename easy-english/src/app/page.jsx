@@ -8,7 +8,7 @@ import { ValuesMockCalendar } from "@/constants/main";
 
 export default function Home() {
   return (
-    <div className="w-full h-auto">
+
       <div className="w-full h-screen grid sm:grid-rows-[4fr_2fr] md:grid-cols-[4fr_2fr] gap-5" >
         {/* Grade da esquerda */}
         <div className="w-full h-auto grid grid-rows-[0.1fr_0.1fr] rounded gap-10">
@@ -189,6 +189,6 @@ export default function Home() {
           </div>
         </div>
       </div>
-    </div>
+
   );
 }
