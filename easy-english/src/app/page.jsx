@@ -76,23 +76,39 @@ export default function Home() {
                 <Icon icon="mingcute:cube-3d-line" width="30" height="30" className="text-gray-500" />
               </div>
             </div>
-            <div className="w-full h-auto grid grid-cols-1 md:grid-cols-[2fr_2fr] p-5 gap-5">
-              <div className="w-full h-auto rounded-2xl p-10 shadow-2xl flex flex-col gap-7">
+            <div className="w-full h-auto grid grid-cols-1 md:grid-cols-[1.3fr_2fr] p-5 gap-5">
+              <div className="w-full h-auto rounded-2xl p-10 shadow-2xl flex flex-col justify-between gap-2">
                 <div className="flex flex-col gap-1">
                   <h1 className="text-5xl font-bold">Easy English</h1>
                   <p className="text-xl text-gray-500">Language cources</p>
                 </div>
-                <div className="flex flex-row justify-between items-center">
-                  <div className="flex flex-row gap-5">
-                    <div className="mask-circle w-20 h-20 bg-gradient-to-l from-pink-500 to-yellow-500 rounded-full"></div>
+                <div className="flex flex-row justify-between items-center ">
+                  <div className="flex flex-row justify-center items-center gap-3">
+                    {/* container da imagem */}
+                    <div className="relative w-30 h-30">
+                      <Image
+                        src={personIcon}
+                        alt="Foto de perfil"
+                        fill
+                        className="object-cover rounded-full p-2"
+                      />
+                    </div>
+
+                    {/* texto ao lado */}
                     <div>
                       <h1 className="text-3xl text-cyan-500">4,5</h1>
                       <div className="flex flex-row gap-1 justify-start items-center text-center">
-                        <Icon icon="line-md:heart-filled" width="20" height="20" className="text-gray-500" />
-                        <h1 className="text-gray-500" >345k</h1>
+                        <Icon
+                          icon="line-md:heart-filled"
+                          width="20"
+                          height="20"
+                          className="text-gray-500"
+                        />
+                        <h1 className="text-gray-500">25k</h1>
                       </div>
                     </div>
                   </div>
+
                   <div className="relative w-50 h-50"> <Image src={mobile_marketing} alt="Foto de perfil" fill className="object-cover" /></div>
                 </div>
                 <div className="w-full h-auto flex flex-row justify-between items-center text-center">
@@ -182,7 +198,7 @@ export default function Home() {
             </div>
 
             {/* Terceiro card */}
-            <div className="w-full h-full rounded-2xl p-10 flex flex-row justify-center items-end  gap-2">
+            <div className="w-full h-full rounded-2xl md:p-10 flex flex-row justify-center items-end  gap-2">
               {ValuesMockCalendar.map((value, key) => (
                 <div key={key} className="relative flex flex-row w-full h-60 justify-center items-center text-center rounded-2xl">
                   <div className="shadow-xl flex flex-col w-full h-50 rounded-2xl justify-center items-center text-center gap-12">
