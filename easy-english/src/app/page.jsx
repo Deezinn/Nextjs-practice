@@ -79,7 +79,7 @@ export default function Home() {
             <div className="w-full h-auto grid grid-cols-1 md:grid-cols-[1.3fr_2fr] p-5 gap-5">
               <div className="w-full h-auto rounded-2xl p-10 shadow-2xl flex flex-col justify-between gap-2">
                 <div className="flex flex-col gap-1">
-                  <h1 className="text-5xl font-bold">Easy English</h1>
+                  <h1 className="text-2xl md:text-5xl font-bold">Easy English</h1>
                   <p className="text-xl text-gray-500">Language cources</p>
                 </div>
                 <div className="flex flex-row justify-center items-center ">
