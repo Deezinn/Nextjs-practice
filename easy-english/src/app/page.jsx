@@ -141,7 +141,7 @@ export default function Home() {
                   </div>
                 </div>
                 <div className="flex flex-col">
-                  <h1 className="text-4xl">André Luiz</h1>
+                  <h1 className="text-2xl md:text-4xl">André Luiz</h1>
                   <h1 className="text-md opacity-50">Developer</h1>
                 </div>
                 <div className="flex justify-center mr-10">
@@ -153,15 +153,15 @@ export default function Home() {
               <div className="w-full flex justify-evenly items-center">
                 <div className="flex flex-col">
                   <h1 className="text-gray-400">Score</h1>
-                  <h1 className="text-5xl">9.7</h1>
+                  <h1 className="text-2xl md:text-5xl">9.7</h1>
                 </div>
                 <div className="flex flex-col">
                   <h1 className="text-gray-400">Investimento</h1>
-                  <h1 className="text-5xl">10.5K</h1>
+                  <h1 className="text-2xl md:text-5xl">10.5K</h1>
                 </div>
                 <div className="flex flex-col">
                   <h1 className="text-gray-400">Contribuidores</h1>
-                  <h1 className="text-5xl">100k</h1>
+                  <h1 className="text-2xl md:text-5xl">100k</h1>
                 </div>
               </div>
             </div>
