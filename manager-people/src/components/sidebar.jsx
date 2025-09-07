@@ -5,7 +5,7 @@ export default function Sidebar() {
   return (
     <>
       <div className="w-full h-auto">
-        <div className='w-full h-auto grid grid-rows-[2fr_2fr_2fr] gap-2'>
+        <div className='w-full h-auto grid grid-rows-[2fr_2fr_2fr] gap-2 p-2'>
           <div className="w-full h-auto flex flex-col gap-1">
             {
               firstGridElements.map((values, key) => (

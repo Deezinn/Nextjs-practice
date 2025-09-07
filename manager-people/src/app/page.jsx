@@ -4,7 +4,7 @@ export default function Home() {
 
   return (
     <>
-      <div className="w-full h-full grid grid-rows-[0.1fr_0.3fr_1fr]">
+      <div className="w-full h-full grid grid-rows-[0.1fr_0.3fr_1fr] ">
         <div className="flex flex-row gap-5">
           <select name="" id="">
             <option value="">Default</option>
@@ -27,7 +27,9 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="bg-blue-300">Última linha ocupando o resto</div>
+        <div className="flex justify-center items-center ">
+        <h1>Aqui fica a tabela</h1>
+        </div>
       </div>
     </>
   );
