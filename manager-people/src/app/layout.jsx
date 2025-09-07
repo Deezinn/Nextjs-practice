@@ -26,7 +26,8 @@ export default function RootLayout({ children }) {
         <div className="grid grid-rows-[auto_1fr] min-h-screen bg-gray-200">
           {/* Barra de navegação (fica no topo) */}
           <NavBar />
-          <div className="grid grid-cols-[350px_1fr] min-h-0 flex-1 p-5 gap-5">
+          <div className="grid grid-cols-[300px_1fr] min-h-0 flex-1 p-5 gap-5">
+            {/* Conteudo junto com a sidebar, eles se separam lateralmente 'colunas' */}
             <Sidebar />
             <main className="p-5 overflow-y-auto rounded-2xl bg-white ">{children}</main>
           </div>
